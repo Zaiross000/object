@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #263238;
+    color: #fff;
+}
+
+/* nav bar */
+.wrapper{
+    background-color: #000;
+    margin-bottom: 20px;
+}
+
+#nav-bar{
+    height: 66px;
+    display: flex;
+    width: 1142px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* nav logo */
+#nav-logo img{
+    height: 35px;
+}
+
+/* nav list */
+#nav-item{
+    display: flex;
+}
+
+#nav-item > li{
+    list-style: none;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+}
+
+#nav-item > li > a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 8px;
+}
+
+#nav-item #subnav{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 400px;   
+    background-color: #fff;
+    border-top: 5px solid #b5e745;
+    display: none;
+}
+
+
+#nav-item #subnav li{   
+    list-style: none;
+    flex-basis: 33.333%;
+
+}
+
+#nav-item #subnav li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 8px 16px;
+}
+
+/* hover nav */
+#nav-item > li:hover #subnav{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+#subnav li:hover a{
+    opacity: 0.6;
+}
+
+/* nav sreach */
+#nav-sreach{
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+}
+
+#sreach-box{
+    border: 1px solid #3e4d53;
+}
+
+#sreach-box i{
+    color: #fff;
+    padding: 1px 16px 3px 16px;
+}
+
+#sreach-box input{  
+    border: none;
+    background-color: #000;
+    height: 40px;
+    width: 230px;
+    color: #fff;
+}
+
+#sreach-box input:focus{
+    outline: none;
+}
+
+#nav-sreach button{
+    height: 40px;
+    width: 100px;
+    background-color: #b71c1c;
+    margin-left: 8px;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+}
+
+#nav-sreach button:hover{
+    background-color: #263238;
+}
+
+
+.container{
+    width: 1142px;
+    background-color: #000;
+    padding: 18px;
+    margin: 0 auto;
+}
+
+#notice{
+    background-color: #2d2d2d;
+    padding: 16px;
+    font-size: 24px;
+    position: relative;
+}
+
+#notice i{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#notice ul{
+    width: 1046px;
+    margin: 0px auto;
+    padding-left: 20px;
+}
+
+#notice ul li{
+    margin: 20px 0px;
+    color: #f3dd3d;
+}
+
+#notice ul li span{
+    color: #e62117;
+}
+
+/* slice bar */
+#slice-bar{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+#slice-bar .slice-item{
+    flex-basis: 12.5%;
+    padding: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    position: relative;
+}
+
+.slice-img img{
+    width: 100%;    
+}
+
+.slice-item .rate{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    border-radius: 20em;
+}
+
+.slice-item .episode{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: rgb(183 28 28 / 90%);
+    height: 40px;
+    width: 40px;    
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* main */
+#main{
+    display: flex;
+    margin-top: 20px;
+}
+
+/* main content */
+#main-content{
+    width: 70%;
+    padding-right: 20px  ;
+
+}
+
+/* sub slice */
+#sub-slice {  
+    padding-top: 50%;
+    background: url(/HTML/AnimeVietsub/Home.html/assets/img/th.jpg) top center / cover no-repeat;
+    position: relative;
+}   
+
+.slice-text{
+    line-height: 1.5;
+    width: 60%;
+    position: absolute  ;
+    top: 0px;
+    left: 0px  ;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    height: 100%;
+}
+
+.slice-text h1{
+    padding-bottom: 12px;
+    font-size: 30px;
+}
+
+
+.slice-text .time-date i{
+    font-size: 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    color: #b5e745;
+}
+
+.slice-text p{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.slice-text .info{
+    font-size: 12px;
+}
+
+.slice-text .info i{
+    color: #b5e745;
+    width: 20px;
+    height: 20px;
+}
+
+.fa-ellipsis{
+    border: 1px solid #b5e745;
+    border-radius: 50%;
+    text-align: center;
+    padding: 3px;
+}
+
+
+
+
+
+ 
+ 
